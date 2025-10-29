@@ -143,4 +143,141 @@
 
     /* Responsive */
     @media (max-width:880px){
-      .
+      .grid{ grid-template-columns:1fr; }
+      header{ flex-direction:column; align-items:flex-start; gap:12px; }
+    }
+
+    /* small utility */
+    .tag{
+      display:inline-block;
+      font-size:0.82rem;
+      color:#062131;
+      background:var(--accent);
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:700;
+      margin-right:8px;
+      vertical-align:middle;
+    }
+
+    .section-title{
+      display:flex;
+      align-items:baseline;
+      gap:12px;
+      margin-bottom:12px;
+    }
+    .section-title h2{ margin:0; font-size:1.15rem; }
+    .section-title p{ margin:0; color:var(--muted); font-size:0.95rem; }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <a class="brand" href="#" aria-label="LiGame home">
+        <div class="logo" aria-hidden="true">LG</div>
+        <div>
+          <div style="font-weight:700; font-size:1.05rem">LiGame</div>
+          <div style="color:var(--muted); font-size:0.9rem; margin-top:2px">Creating games that move people</div>
+        </div>
+      </a>
+
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#tech">Technology</a>
+        <a href="#philosophy">Philosophy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="about" aria-labelledby="about-heading">
+        <div>
+          <div class="eyebrow">Studio</div>
+          <h1 id="about-heading">LiGame — a creative game studio focused on narrative, AI, and immersive play.</h1>
+          <p class="lead" style="margin-top:10px">
+            We believe games are more than entertainment — they’re a powerful medium for storytelling and human connection. LiGame crafts original experiences that combine visual beauty, emotional depth, and thoughtful gameplay.
+          </p>
+        </div>
+
+        <div class="grid" aria-hidden="true" style="margin-top:6px">
+          <div class="card">
+            <h3>Our Vision</h3>
+            <p class="muted">
+              "To create heartfelt games that inspire players around the world." We explore the intersection of narrative, AI, and interactivity to build experiences that linger long after play ends.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Studio Approach</h3>
+            <p class="muted">
+              Passion-driven development, a focus on original design, and careful balance between art and mechanics. Small teams, big ambition.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" style="margin-top:22px">
+        <div class="section-title">
+          <span class="tag">Works</span>
+          <h2>Our Projects</h2>
+          <p class="muted" style="margin-left:auto">Selected highlights</p>
+        </div>
+
+        <div class="grid">
+          <article class="card" aria-labelledby="puzzle-heading">
+            <h3 id="puzzle-heading">Puzzle Story</h3>
+            <p class="muted">
+              A narrative-driven puzzle game that blends storytelling with artful puzzle mechanics. Players reveal images and stories piece by piece, uncovering emotions and memories behind each scene.
+            </p>
+            <p style="margin-top:10px; color:var(--muted); font-size:0.92rem">Platform: Mobile (Android / iOS)</p>
+          </article>
+
+          <article class="card" aria-labelledby="ai-heading">
+            <h3 id="ai-heading">AI Companion (In Development)</h3>
+            <p class="muted">
+              An AI-powered virtual companion exploring emotional modeling and natural language interactions. This project investigates how games and digital companions can create meaningful emotional experiences.
+            </p>
+            <p style="margin-top:10px; color:var(--muted); font-size:0.92rem">Status: Development</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="tech" style="margin-top:22px">
+        <div class="section-title">
+          <h2>Technology & Creativity</h2>
+          <p class="muted">Tools and focus areas</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns:1fr 1fr">
+          <div class="card">
+            <h3>Engine & Tools</h3>
+            <p class="muted">Unity for multi-platform development, C# for gameplay and systems, shader work and animation pipelines for visual polish.</p>
+          </div>
+
+          <div class="card">
+            <h3>AI & Narrative</h3>
+            <p class="muted">Proprietary systems for AI-driven narrative, character behavior, and dynamic story elements. Experimentation with procedural content and emotional modeling.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="philosophy" style="margin-top:22px">
+        <div class="section-title">
+          <h2>Philosophy</h2>
+          <p class="muted">Why we make games</p>
+        </div>
+
+        <div class="card" style="padding:20px">
+          <p class="muted">
+            We aim to create games that touch people’s hearts—not only through polished visuals or mechanics, but through emotion and meaning. Every LiGame title is crafted with care, where every frame and melody carries the passion of its creators.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        © 2025 LiGame Studio. All rights reserved. LiGame — Creating games that move people.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
